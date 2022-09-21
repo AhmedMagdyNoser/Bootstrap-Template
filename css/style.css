@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--red-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--red-color)!important;
+}
+
+.main-title::after {
+    position: absolute;
+    bottom: -20px;
+    content: '';
+    background-color: var(--green-color);
+    width: 100px;
+    height: 3px;
+    transform: translateX(-50%);
+}
+
+/* ---------------------------------- Navbar ---------------------------------- */
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid var(--green-color);
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler svg {
+    color: white;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.navbar .navbar-nav button {
+    font-size: 14px;
+}
+
+/* ---------------------------------- Landing ---------------------------------- */
+
+.landing {
+    min-height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+
+/* ---------------------------------- Features ---------------------------------- */
+
+.features .icon-holder {
+    height: 215px;
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    transform: translateX(-50%);
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    font-size: 5rem;
+    transform: translateX(-50%);
+    color: var(--green-color);
+}
+
+.features h3 {
+    color: var(--yellow-color);
+}
+
+/* ---------------------------------- Portofolio ---------------------------------- */
+
+.portofolio {
+    background-color: var(--section-color);
+}
+
+.portofolio ul .active {
+    padding: 5px 15px;
+    background-color: var(--red-color);
+    border-radius: 15px;
+    color: white;
+}
+
+.portofolio ul li:not(.active):hover {
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+.portofolio .box {
+    border: 5px solid white;
+}
+
+/* ---------------------------------- Team ---------------------------------- */
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team h3 {
+    background-color: var(--green-color);
+}
+
+/* ---------------------------------- Project ---------------------------------- */
+
+.project {
+    background-color: var(--dark-color);
+}
+
+/* ---------------------------------- Subscribe ---------------------------------- */
+
+.subscribe {
+    background-color: var(--section-color);
+}
+
+.subscribe form input[type="email"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--dark-color);
+}
+
+/* ---------------------------------- Footer ---------------------------------- */
+
+footer {
+    background-color: var(--dark-color);
+}
+
+.copyright > span {
+    color: var(--green-color);
+}
+
+.copyright div span {
+    color: var(--yellow-color);
+}
+
+footer .social li a:hover {
+    color: white !important;
+}
